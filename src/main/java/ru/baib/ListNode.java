@@ -31,4 +31,15 @@ class ListNode {
     public int hashCode() {
         return Objects.hash(val, next);
     }
+
+    @Override
+    public String toString() {
+        String toString = "";
+        ListNode temp = this;
+        while (temp != null) {
+            toString += temp.val;
+            temp = temp.next;
+        }
+        return toString;
+    }
 }
